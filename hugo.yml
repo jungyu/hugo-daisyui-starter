@@ -1,0 +1,36 @@
+languageCode: zh-TW
+title: Hugo template starter
+baseURL: http://localhost:1313
+enableInlineShortcodes: true
+canonifyURLs: true
+params:
+  homepage: https://hugo-starter.com
+  authors: jungyuyu@gmail.com
+  social_image_path: /marketing-ui/demo/images/og-image.jpg
+  description: "這是我的個人網站。"
+  keywords:
+    - "部落格"
+    - "技術"
+    - "分享"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    style: colorful
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+buildDrafts: true
+buildFuture: true
+enableRobotsTXT: true
+metaDataFormat: yaml
+disableKinds:
+  - '404'
+  - taxonomy
+  - taxonomyTerm
+  - RSS
+publishDir: _gh_pages
+
+

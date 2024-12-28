@@ -1,0 +1,10 @@
+{
+    "name": "你的網站名稱",
+    "short_name": "網站簡稱",
+    "description": "網站描述",
+    "start_url": "/",
+    "display": "standalone", 
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": []
+  }
