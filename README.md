@@ -1,4 +1,4 @@
-本專案為 Hugo + daisyUI + Alpinejs starter 專案。
+本專案為 Hugo + daisyUI + Alpinejs starter 專案，從零開始完整教學文件請參考：[https://hugo.makiot.com](https://hugo.makiot.com)(coming soon...)。
 
 ## 設定 Hugo + daisyUI Starter 專案
 
