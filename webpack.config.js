@@ -1,6 +1,7 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const { SourceMapDevToolPlugin } = require("webpack");
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -42,8 +43,14 @@ module.exports = {
     })
   ],
   optimization: {
+    minimize: true, // 開啟壓縮
     minimizer: [
+      new TerserPlugin(),
       new CssMinimizerPlugin()
     ]
+  },
+  externals: {
+    // 將 jQuery 排除在 Webpack 的轉換之外
+    jquery: 'jQuery',
   },
 };
